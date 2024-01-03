@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2, p {font-family: Georgia, 'Times New Roman', Times, serif;}
+body {
+  background-image: url(background-19-neutral-30x40-small-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {font-weight: bold;
+    margin: 0px;
+}
+h2 {font-weight: bold;}
+p {font-size: 15px;
+   margin: 0px;
+}
+.w3-row-padding img {margin-bottom: 12px}
+#myNavbar {position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  transition: top 0.3s;
+}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+  <nav class="w3-top w3-bar w3-white w3-opacity w3-hover-opacity-off w3-small w3-hide-small w3-center">
+    <a href="Goal.html" class="w3-bar-item w3-button w3-padding-large" style="width:25% !important">
+      <i class="fa fa-home w3-xxlarge"></i>
+    </a>
+    <a href="About.html" class="w3-bar-item w3-button w3-padding-large" style="width:25% !important">
+      <i class="fa fa-user w3-xxlarge"></i>
+    </a>
+    <a href="Layout.html" class="w3-bar-item w3-button w3-padding-large" style="width:25% !important">
+      <i class="fa fa-photo w3-xxlarge w3-light-gray"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" style="width:25% !important">
+      <i class="fa fa-phone w3-xxlarge"></i>
+    </a>
+  </nav>
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="Goal.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="About.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="Layout.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("myNavbar").style.top = "0";
+      } else {
+        document.getElementById("myNavbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    <div class="w3-padding-64 w3-content w3-center" id="photos">
+      <h2 class="w3-text-black">Here are some of my Shots!</h2>
+      <hr style="width:200px" class="w3-opacity">
+  
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-padding">
+          <img src="Janna1.JPG" style="width:100%">
+          <img src="janna2.JPG" style="width:100%">
+          <img src="RZJ.jpg" style="width:100%">
+          <img src="IMG_6384.JPG" style="width:100%">
+          <img src="IMG_5497.jpg" style="width:100%">
+          <img src="IMG_4304.JPG" style="width:100%">
+          <img src="IMG_6229.JPG" style="width:100%">
+          <img src="IMG_0034.JPG" style="width:100%">
+        </div>
+  
+        <div class="w3-half w3-padding">
+          <img src="Jelaysun.JPG" style="width:100%">
+          <img src="IMG_6295.JPG" style="width:100%">
+          <img src="IMG_5260.jpg" style="width:100%">
+          <img src="IMG_4102.jpg" style="width:100%">
+          <img src="IMG_5335.jpg" style="width:100%">
+          <img src="IMG_4193.JPG" style="width:100%">
+          <img src="IMG_5516.jpg" style="width:100%">
+          <img src="IMG_5444.jpg" style="width:100%">
+          <img src="IMG_0015.JPG" style="width:100%">
+          <img src="IMG_5337.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="w3-medium w3-center w3-text-black">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+  
+</html>
